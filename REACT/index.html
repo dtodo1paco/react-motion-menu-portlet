@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<div id="container"></div>
+
+<script type="text/javascript" src="./dist/bundle.js" ></script>
+<script>
+
+    var childIconProps = {};
+    childIconProps.icons = ['fa fa-dashboard fa-lg','face','face'];;
+    childIconProps.links = ['/one','/two','/tree'];
+    childIconProps.diam = 100;
+
+    var mainIconProps = {};
+    mainIconProps.icon = 'face';
+    mainIconProps.diam = 150;
+
+    // calculate the center of the screen
+    var w = mainIconProps.diam;
+    var h = mainIconProps.diam;
+    var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;
+    var dualScreenTop = window.screenTop != undefined ? window.screenTop : screen.top;
+    var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+    var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+    var theleft = ((width / 2) - (w / 2)) + dualScreenLeft;
+    var thetop = ((height / 2) - (h / 2)) + dualScreenTop;
+
+	var background_color = '#8898A5';
+	var color = '#CDDC39';
+
+    mainIconProps.pos_x = theleft;
+    mainIconProps.pos_y = thetop;
+
+	renderMotionMenu('#container', mainIconProps, childIconProps, color, background_color);
+</script>
+</body>
+</html>

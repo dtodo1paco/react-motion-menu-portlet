@@ -1,0 +1,61 @@
+html, body {
+  background-color: #dddddd; }
+
+.main-button {
+  position: absolute;
+  border-radius: 100%;
+  background-color: #8898A5;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #CDDC39;
+  font-weight: lighter;
+  border: 1px solid rgba(0, 0, 0, 0.1); }
+
+.child-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #CDDC39;
+  color: #8898A5;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px; }
+
+a, a:link, a:visited, a:focus, a:hover, a:active {
+  color: #8898A5;
+  text-decoration: none; }
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+  font-size: 18px; }
+
+.material-icons.md-24 {
+  font-size: 24px; }
+
+.material-icons.md-36 {
+  font-size: 36px; }
+
+.material-icons.md-48 {
+  font-size: 48px; }
+
+.material-icons.md-150 {
+  font-size: 150px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54); }
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+  color: white; }
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3); }
+
