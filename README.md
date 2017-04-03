@@ -34,7 +34,7 @@ npm install react react-dom
 npm install reactify babelify babel-preset-react browserify   vinyl-source-stream babel-preset-es2015  browser-sync vinyl-transform del jshint vinyl-buffer
 npm install react-motion lodash.range
 ```
-##Run in local environment
+## Run in local environment
 Use gulp to run your tests using index.html as tester page
 ```
 gulp
@@ -55,7 +55,7 @@ dtodo1paco@dtodo1paco-laptop:~/WORKSPACE/DTODO1PACO/REPOS/react-motion-menu-port
 
 Make your changes to JSX filex included in app directory. Gulp will automatically update your page to test.
 
-##Integrate with Liferay
+## Integrate with Liferay
 Make your REACT/dist directory point to docroot/js/dist and you will automatically update your portlet javascript with no action.
 
 ```
